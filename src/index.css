@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: "poppins", "sans-serif";
+}
+.linear_grad{
+  background-image:linear-gradient(to right, rgba(243, 105, 243, 1), rgba(164, 80, 236, 1))
+ }
+ .linear_grad0{
+  background:linear-gradient(180deg,rgba(255, 255, 255, 1),rgba(153, 153, 153, 1)) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .linear_grad1{
+  background-image:linear-gradient(to right, rgba(228, 0, 228, 1), rgba(114, 0, 251, 1))
+ }
+ .linear_grad2 {
+  border: 1px solid transparent; /* Adjust the border width as needed */
+  border-image: linear-gradient(to right, rgba(228, 0, 228, 1), rgba(114, 0, 251, 1));
+  border-image-slice: 1;
+}
+.loader {
+  border-top-color: #ce39b5;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
